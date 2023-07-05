@@ -1,6 +1,6 @@
 // https://delacruz.dev/blog/memoize-en-javascript
 
-function memoize(callback: (...args: any[]) => any) {
+export function memoize(callback: (...args: any[]) => any) {
     let diccionario: Record<string, any> = {};
 
     return function(...args: any[]){
@@ -8,7 +8,7 @@ function memoize(callback: (...args: any[]) => any) {
 
         // Comprueba el diccionario
         if(diccionario.hasOwnProperty(clave)) {
-            console.log("Valor ya almacenado almacenado");
+            console.log("Valor ya almacenado");
         }else{
             diccionario[clave] = callback(...args);
         }
