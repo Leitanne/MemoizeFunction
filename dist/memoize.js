@@ -1,5 +1,4 @@
 "use strict";
-// https://delacruz.dev/blog/memoize-en-javascript
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.memoize = void 0;
 function memoize(callback) {

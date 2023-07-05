@@ -1,5 +1,3 @@
-// https://delacruz.dev/blog/memoize-en-javascript
-
 export function memoize(callback: (...args: any[]) => any) {
     let diccionario: Record<string, any> = {};
 
